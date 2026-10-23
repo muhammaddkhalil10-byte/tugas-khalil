@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV Khalil - Portfolio</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #212529;
+      font-family: Arial, sans-serif;
+    }
+
+    section {
+      padding: 65px 0;
+    }
+
+    .navbar {
+      background: #14213d;
+    }
+
+    .navbar-brand,
+    .navbar .nav-link {
+      color: white;
+    }
+
+    .navbar .nav-link:hover {
+      color: #fca311;
+    }
+
+    .carousel img {
+      height: 420px;
+      object-fit: cover;
+    }
+
+    .about-box,
+    .contact-box {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px #00000010;
+    }
+
+    .menu-card {
+      height: 100%;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 18px #00000012;
+      transition: transform 0.2s;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .logo-link {
+      display: block;
+      padding: 20px;
+      background: white;
+    }
+
+    .logo-link img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+    }
+
+    .btn-custom {
+      background: #fca311;
+      color: #14213d;
+      border: none;
+      font-weight: bold;
+    }
+
+    .btn-custom:hover {
+      background: #e89200;
+      color: #14213d;
+    }
+
+    footer {
+      background: #14213d;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+    }
+
+    @media (max-width: 576px) {
+      .carousel img {
+        height: 230px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 1. NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">CV KHALIL</a>
+
+      <button
+        class="navbar-toggler bg-light"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu"
+        aria-expanded="false"
+        aria-label="Buka navigasi"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. CAROUSEL -->
+  <section id="home" class="pt-0">
+    <div id="carouselPortfolio"
+         class="carousel slide"
+         data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button"
+                data-bs-target="#carouselPortfolio"
+                data-bs-slide-to="0"
+                class="active"
+                aria-label="Slide 1"></button>
+
+        <button type="button"
+                data-bs-target="#carouselPortfolio"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+
+        <button type="button"
+                data-bs-target="#carouselPortfolio"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="khalil.jpg"
+            class="d-block w-100"
+            alt="Pemrograman komputer"
+          >
+          <div class="carousel-caption">
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="khalil2.jpg"
+            class="d-block w-100"
+            alt="Kolaborasi teknologi"
+          >
+          <div class="carousel-caption">
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="khalil3.jpg"
+            class="d-block w-100"
+            alt="Komponen teknologi"
+          >
+          <div class="carousel-caption">
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselPortfolio"
+              data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"
+              aria-hidden="true"></span>
+        <span class="visually-hidden">Sebelumnya</span>
+      </button>
+
+      <button class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselPortfolio"
+              data-bs-slide="next">
+        <span class="carousel-control-next-icon"
+              aria-hidden="true"></span>
+        <span class="visually-hidden">Berikutnya</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- 3. ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-box">
+        <div class="row align-items-center g-4">
+
+          <div class="col-md-4 text-center">
+            <img
+              src="khalil3.jpg"
+              alt="Ilustrasi teknologi"
+              class="img-fluid rounded-4"
+            >
+          </div>
+
+          <div class="col-md-8">
+            <h2 class="fw-bold mb-3">About Me</h2>
+
+            <p>
+              Halo! Saya Khalil. Saya tertarik dengan dunia teknologi,
+              pemrograman, dan pengembangan website.
+            </p>
+
+            <p>
+              Website ini merupakan portfolio sederhana untuk
+              memperkenalkan diri dan menampilkan berbagai bahasa
+              pemrograman yang sedang saya pelajari.
+            </p>
+
+            <a href="#menu" class="btn btn-custom">
+              Lihat Menu
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. MENU -->
+  <section id="menu" class="bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-2">
+        Menu Pembelajaran
+      </h2>
+
+      <p class="text-center text-secondary mb-5">
+        Pilih bahasa pemrograman untuk mulai belajar.
+      </p>
+
+      <div class="row g-4">
+
+        <!-- HTML -->
+        <div class="col-6 col-md-4">
+          <div class="card menu-card">
+            <a class="logo-link"
+               href="https://www.w3schools.com/html/"
+               target="_blank" rel="noopener noreferrer">
+              <img src="html.jpg" alt="Logo HTML">
+            </a>
+            <div class="card-body text-center">
+              <h5 class="fw-bold">HTML</h5>
+              <p>Dasar struktur halaman web.</p>
+              <a class="btn btn-custom"
+                 href="https://www.w3schools.com/html/"
+                 target="_blank" rel="noopener noreferrer">
+                Selengkapnya
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="col-6 col-md-4">
+          <div class="card menu-card">
+            <a class="logo-link"
+               href="https://www.w3schools.com/css/"
+               target="_blank" rel="noopener noreferrer">
+              <img src="css.jpg" alt="Logo CSS">
+            </a>
+            <div class="card-body text-center">
+              <h5 class="fw-bold">CSS</h5>
+              <p>Mengatur tampilan website.</p>
+              <a class="btn btn-custom"
+                 href="https://www.w3schools.com/css/"
+                 target="_blank" rel="noopener noreferrer">
+                Selengkapnya
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- JAVASCRIPT -->
+        <div class="col-6 col-md-4">
+          <div class="card menu-card">
+            <a class="logo-link"
+               href="https://www.w3schools.com/js/"
+               target="_blank" rel="noopener noreferrer">
+              <img src="js.jpg" alt="Logo JavaScript">
+            </a>
+            <div class="card-body text-center">
+              <h5 class="fw-bold">JavaScript</h5>
+              <p>Membuat website interaktif.</p>
+              <a class="btn btn-custom"
+                 href="https://www.w3schools.com/js/"
+                 target="_blank" rel="noopener noreferrer">
+                Selengkapnya
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHP -->
+        <div class="col-6 col-md-4">
+          <div class="card menu-card">
+            <a class="logo-link"
+               href="https://www.w3schools.com/php/"
+               target="_blank" rel="noopener noreferrer">
+              <img src="php.jpg" alt="Logo PHP">
+            </a>
+            <div class="card-body text-center">
+              <h5 class="fw-bold">PHP</h5>
+              <p>Pemrograman sisi server.</p>
+              <a class="btn btn-custom"
+                 href="https://www.w3schools.com/php/"
+                 target="_blank" rel="noopener noreferrer">
+                Selengkapnya
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQL -->
+        <div class="col-6 col-md-4">
+          <div class="card menu-card">
+            <a class="logo-link"
+               href="https://www.w3schools.com/sql/"
+               target="_blank" rel="noopener noreferrer">
+              <img src="sql.jpg" alt="Logo SQL">
+            </a>
+            <div class="card-body text-center">
+              <h5 class="fw-bold">SQL</h5>
+              <p>Mengelola data dalam database.</p>
+              <a class="btn btn-custom"
+                 href="https://www.w3schools.com/sql/"
+                 target="_blank" rel="noopener noreferrer">
+                Selengkapnya
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PYTHON -->
+        <div class="col-6 col-md-4">
+          <div class="card menu-card">
+            <a class="logo-link"
+               href="https://www.w3schools.com/python/"
+               target="_blank" rel="noopener noreferrer">
+              <img src="python.jpg" alt="Logo Python">
+            </a>
+            <div class="card-body text-center">
+              <h5 class="fw-bold">Python</h5>
+              <p>Bahasa pemrograman serbaguna.</p>
+              <a class="btn btn-custom"
+                 href="https://www.w3schools.com/python/"
+                 target="_blank" rel="noopener noreferrer">
+                Selengkapnya
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. KONTAK -->
+  <section id="kontak">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-2">
+        Hubungi Saya
+      </h2>
+
+      <p class="text-center text-secondary mb-4">
+        Isi formulir untuk mengirim pesan melalui WhatsApp.
+      </p>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="contact-box">
+
+            <form id="formKontak">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input
+                  type="text"
+                  id="nama"
+                  class="form-control"
+                  placeholder="Masukkan nama kamu"
+                  required
+                >
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="nama@email.com"
+                  required
+                >
+              </div>
+
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea
+                  id="pesan"
+                  class="form-control"
+                  rows="5"
+                  placeholder="Tulis pesan kamu..."
+                  required
+               ></textarea>
+              </div>
+
+              <button type="submit"
+                      class="btn btn-custom w-100">
+                Kirim Pesan via WhatsApp
+              </button>
+
+              <p class="small text-secondary mt-3 mb-0">
+                WhatsApp akan terbuka dengan pesan yang sudah diisi.
+                Tekan tombol Kirim di WhatsApp untuk mengirim pesan.
+              </p>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FOOTER -->
+  <footer>
+    <p class="mb-1">© 2026 CV Khalil</p>
+    <p class="mb-0">
+     cv khali portfolio dan pembelajaran web.
+    </p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document
+      .getElementById("formKontak")
+      .addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const nama = document.getElementById("nama").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const pesan = document.getElementById("pesan").value.trim();
+
+        const nomorWhatsApp = "6289531767588";
+
+        const teksPesan =
+          "Halo, saya ingin menghubungi Anda melalui website.\n\n" +
+          "Nama: " + nama + "\n" +
+          "Email: " + email + "\n" +
+          "Pesan: " + pesan;
+
+        const urlWhatsApp =
+          "https://wa.me/" + nomorWhatsApp + 89531867588
+          "?text=" + encodeURIComponent(teksPesan);
+
+        window.open(urlWhatsApp, "_blank");
+      });
+  </script>
+
+</body>
+</html>
